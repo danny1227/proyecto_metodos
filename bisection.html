@@ -14,7 +14,7 @@
     <!-- ENLACE PARA JQUERY -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     
-    <title>REGRESION</title>
+    <title>METODO DE BISECCION | Daniel Ramirez</title>
 </head>
 <body>
 <!--Navigation bar-->
@@ -26,28 +26,28 @@
   });
 </script>
 <!--end of Navigation bar-->
-
-<div class="row">
- 
-    <ul class="nav nav-tabs fixed-top" style="margin-block-start: 6%; background-color: rgb(243, 243, 243);">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Descripcion</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#info-one">Razones</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Implementación</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Historia</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Referencias</a>
-      </li>
-    </ul>
-</div>
-
+<div class="row"> 
+  <ul class="nav nav-tabs fixed-top" style="margin-block-start: 6%; background-color: rgb(243, 243, 243);">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Descripcion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#experiencia">Experiencia</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#origen"> Origen</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#adven">Ventajas y Desventajas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#cod-c">Codigo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#referencias">Referencias</a>
+    </li>
+  </ul>
+</div>  
 <br><br>
 <section id="description">
   <div class="row" style="justify-content: center; text-align: justify;">
@@ -68,6 +68,7 @@
   </div>
 </section>
 <br>
+
 <header class="header mt-1">
  <div class="container">
    <div class="row"> <!-- HACE UNA FILA DE 12 COLUMNAS-->
@@ -143,74 +144,120 @@
     </div>
   </div>
 </section>
-
-
-
+<br>
+<section id="origen">
+  <div class="container" style="text-align: justify;">
+    <p class="h1" style="text-align: left;">Origen</p>
+    <p class="h4"> Aunque hay pocos conocimientos concretos sobre el desarrollo del método de bisección, podemos deducir que se desarrolló poco después de que Bernard Bolzano demostrara por primera vez el Teorema del Valor Intermedio en 1817 (Edwards 1979). Parece que se utilizó como prueba de un teorema intermedio a la prueba general que Bolzano estaba desarrollando para el Teorema del Valor Intermedio.</p>
+    <p class="h5"> -Edwards, C. H. (1979). Bolzano, Cauchy, and Continuity. The Historical Development of the Calculus (pp. 308, 309). New York, NY: Springer New York</p>
+  </div>
+</section>
+<br>
 
 <section class="" id="adven" style="background: rgb(236, 245, 247);">
   <div class="container" >
     <div class="row">
-      <div class="col-md-6">
-        <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
+      <div class="col-md-12">
+        <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
           <div class="card-body" style="text-align: justify;">
             
           <h5> Ventajas: </h5>
             <p class="mt-3">
-            *      <br>
-            *      <br>
-            *      <br>
-            *      <br>
-            *      <br>
-            *      <br>
+            * Siempre es convergente<br>
+            * El aumento del número de iteraciones siempre produce una raíz más precisa, es decir el error se puede controlar.     <br>
+            * No requiere cálculos complejos. Para realizar el método de bisección, todo lo que necesitamos es calcular el promedio de dos números.<br>
+            * Existe un límite de error garantizado, que disminuye con cada iteración sucesiva. El límite de error disminuye en ½ con cada iteración.     <br>
+            * Es simple y fácil de programar en computadora. <br>
+            * Es rápido en caso de multiplices raices.     <br>
+            </p>
         </div>
       </div>
       </div>
-      <div class="col-md-6">
-        <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
-          <div class="card-body" style="text-align: justify;">
-            <h5> Desventajas :</h5>
-            <p class="mt-3">
-            El método de bisección se utiliza para encontrar las raíces de una 
-            ecuación polinómica. Se separa el intervalo y se subdivide el intervalo
-             en el que se encuentra la raíz de la ecuación. El principio de este 
-             método es el teorema intermedio para funciones continuas. Funciona 
-             reduciendo la brecha entre los intervalos positivo y negativo hasta 
-             que se acerca a la respuesta correcta. Este método reduce la diferencia
-             tomando la media de los intervalos positivo y negativo. Es un método 
-             sencillo y relativamente lento.     
-        </div>
-      </div>
-      </div>
+      
     </div>
   </div>
 </section>
 
-
-<section id="testimonial">
+<section id="desv" style="background: rgb(236, 245, 247);">
   <div class="container">
-    <p class="h2"></p>
-    <p class="h4"> - NOMBRE T</p>
-</div>
-</section>
-<!-- INFO ONE -->
-<section id="info-one">
-<div class="container">
-  <div class="row mt-5">
-    <div class="col-xl-6">
-      <div class="info-left">
-        <!-- alt es para texto alternativo -->
-        <img src="img/LOGOU.png" style="width: 75%; " alt="representacion">
-      </div>
-    </div>
-    <div class="col-xl-6 my-auto">
-      <div class="info-rigth">
-        <h2>ACA TITULO DESCRIPCION DEL METODO</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque eaque illo libero, aut sit veritatis. Harum, enim suscipit. Voluptatem earum corrupti error aliquid tempora. Dolor obcaecati nobis tempora odit quod.</p>
-        <a href="" class="btn btn-outline-secondary btn-lg"> LEER MAS </a> 
+    <div class="row">
+      <div class="col-md-12">
+          <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light  rounded">
+            <div class="card-body" style="text-align: justify;">
+              <h5> Desventajas :</h5>
+              <p class="mt-3">
+                * No se puede encontrar la raíz de algunas ecuaciones. Por ejemplo: f (x) = x^2 ya que no hay valores entre corchetes.<br>
+                * No se puede aplicar en un intervalo donde la función toma valores del mismo signo. <br>
+                * No determina raices complejas.<br>
+                * Si bien la convergenia está asegurada, está puede llevar mucho más tiempo que otros metodos.<br>                
+                * No se puede aplicar si hay discontinuidades en el intervalo, debe ser función lineal.     <br>
+                </p>   
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+
+<section class="cod-c">
+  <header class="header mt-1">
+    <div class="container">
+      <div class="row"> <!-- HACE UNA FILA DE 12 COLUMNAS-->
+        
+        <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
+           <div class="header-content-right">
+             <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+               <div class="card-body" style="text-align: justify;">
+                 <h1> Codigo en c++ </h1>          
+               <p class="mt-3">
+               El código en c++ para la utilización del metodo lo puede descargar en esta seccion.
+               <i>Este codigo está optimizado para utilizarlo en el software de Visual Basic</i>              
+               </p> 
+               <a href="" class="btn btn-outline-success mt-2 header-btn">Descargar codigo</a>         
+               </div>
+             </div>
+           </div>
+        </div>
+        <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
+          <div class="header-content-right">
+            <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+              <div class="card-body" style="text-align: justify;">
+                <h1> Codigo en Matlab</h1>             
+              <p class="mt-3">
+              El código en Matlab para la utilización del metodo lo puede descargar en esta seccion.
+              <i>Este codigo está optimizado para utilizarlo en el software de Matlab</i>              
+              </p>          
+              <a href="" class="btn btn-outline-success mt-2 header-btn">Descargar codigo</a>
+              </div>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="" id="referencias" style="background: rgb(236, 245, 247);">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
+          <div class="card-body" style="text-align: justify;">
+            
+          <h5> Acá podrá amplicar la información y encontrara las referencias de diferentes conceptos que se utilizaron en esta presentación: </h5>
+            <p class="mt-3">
+            *<a target="_blank" href="https://en.wikipedia.org/wiki/Bisection_method#:~:text=In%20mathematics%2C%20the%20bisection%20method,two%20values%20with%20opposite%20signs">https://en.wikipedia.org/wiki/Bisection_method#:~:text=In%20mathematics%2C%20the%20bisection%20method,two%20values%20with%20opposite%20signs</a><br>
+            * <a target="_blank" href="https://byjus.com/maths/bisection-method/#:~:text=The%20bisection%20method%20is%20an,found%2C%20which%20is%20extremely%20small.">https://byjus.com/maths/bisection-method/#:~:text=The%20bisection%20method%20is%20an,found%2C%20which%20is%20extremely%20small.</a>     <br>
+            * <a target="_blank" href="https://www.codesansar.com/numerical-methods/bisection-method-disadvantages.htm">https://www.codesansar.com/numerical-methods/bisection-method-disadvantages.htm</a> <br>
+            * <a target="_blank" href="https://www.codesansar.com/numerical-methods/bisection-method-advantages.htm"> https://www.codesansar.com/numerical-methods/bisection-method-advantages.htm</a>     <br>
+            * <a target="_blank" href="https://es.slideshare.net/Osila/ejemplo-del-mtodo-de-biseccin">https://es.slideshare.net/Osila/ejemplo-del-mtodo-de-biseccin</a><br>            
+            </p>
+        </div>
+      </div>
+      </div>      
+    </div>
+  </div>
 </section>
 
 <!-- INFO TWO -->
@@ -233,39 +280,9 @@
   </div>
 </section>
 
-<footer id="contact" style="width: auto;   height:auto">
-  <div class="container">
-    <div class="rom">
-      <div class="col-xl-5">
-        <form class="card my-6">
-          <div class="card-body">
-            <div class="form-group">
-              <input type="text" placeholder="Nombre" class="form-control">
-            </div>
-            <br>
-            <div class="form-group">
-              <input type="email" placeholder="Email" class="form-control">
-            </div>
-            <br>
-            <div class="form-group">
-              <textarea placeholder="Mensaje" cols="80" rows="8" class="form-control"></textarea>
-            </div>
-            <br>
-            <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-block btn-outline-secondary">ENVIAR</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-xl-5">
-        <div class="content-foot">
-          <img src="img/hey-email.png" alt="" style="width: 70%;"></a>
-        </div>
-      </div>
 
-    </div>
-  </div>
-</footer>
+
+
 
 <br><br><br><br>
 <!--  BOOSTRAP DE SCRIPT -->
