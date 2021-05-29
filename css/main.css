@@ -13,3 +13,17 @@ footer{
     background: url(../img/hey-email.png) center no-repeat;
     align-items: center;
 }
+
+.dropdown-menu{
+    z-index: 1;
+}
+
+.nav{
+    z-index: 1;
+}
+
+.dropdown-item{
+    z-index: 1;
+}
+
+
