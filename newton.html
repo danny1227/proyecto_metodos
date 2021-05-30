@@ -14,7 +14,7 @@
     <!-- ENLACE PARA JQUERY -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     
-    <title>METODO DE BISECCION | Daniel Ramirez</title>
+    <title>METODO NEWTON RAPSHON| Daniel Ramirez</title>
 </head>
 <body>
 <!--Navigation bar-->
@@ -27,9 +27,9 @@
 </script>
 <!--end of Navigation bar-->
 <br>
-  <ul class="nav nav-tabs responsive fixed-top" style="margin-block-start: 6%; background-color: rgb(243, 243, 243);">
+  <ul class="nav nav-tabs fixed-top" style="margin-block-start: 6%; background-color: rgb(243, 243, 243);">
     <li class="nav-item">
-      <a class="nav-link active"  aria-current="page" href="#">Descripcion</a>
+      <a class="nav-link active" aria-current="page" href="#">Descripcion</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#experiencia">Experiencia</a>
@@ -62,11 +62,11 @@
           Descripcion:
         </p>
         <p class="h5">
-          En matemáticas, el método de bisección es una técnica
-           sencilla para encontrar soluciones numéricas de una 
-           ecuación con una incógnita. Entre todos los métodos 
-           numéricos, el método de bisección es el más sencillo 
-           para resolver la ecuación trascendental. 
+            Es una de las técnicas numéricas para resolver un problema de búsqueda de raíces f(x) =
+            0 más poderosas y conocidas. Hay muchas formas de introducirlo. La más común consiste en
+            considerarlo gráficamente. Otra posibilidad consiste en derivarlo como una técnica que
+            permite lograr una convergencia más rápida que la que ofrecen otros tipos de iteración
+            funcional. Una tercera forma de introducir este método se basa en los polinomios de Taylor.
         </p>
       </div>
     </div>
@@ -80,7 +80,7 @@
      <div class="col-md-5"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
         <div class="content-header-left">
           <a>
-          <img title="Funcion del metodo graficamente"  class="shadow mb-5 bg-body" src="img/Bisection/250px-Bisection_method.svg.png" alt="" style="width: 75%;">
+          <img title="Funcion del metodo graficamente"  class="shadow mb-5 bg-body" src="img/Newton/NewtonIteration_Ani.gif" alt="" style="width: 100%;">
           </a>          
           </div>
      </div>
@@ -88,22 +88,16 @@
         <div class="header-content-right">
           <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
             <div class="card-body" style="text-align: justify;">
-              <h1> Metodo de bisección </h1>
+              <h1> Metodo de Newton Raphson </h1>
           <h5> Definición :</h5>
             <p class="mt-3">
-            El método de bisección se utiliza para encontrar las raíces de una 
-            ecuación polinómica. Se separa el intervalo y se subdivide el intervalo
-             en el que se encuentra la raíz de la ecuación. El principio de este 
-             método es el teorema intermedio para funciones continuas. Funciona 
-             reduciendo la brecha entre los intervalos positivo y negativo hasta 
-             que se acerca a la respuesta correcta. Este método reduce la diferencia
-             tomando la media de los intervalos positivo y negativo. Es un método 
-             sencillo y relativamente lento.
-             <br> El método de bisección también se conoce
-              como método de reducción a la mitad del intervalo, método de búsqueda de
-              la raíz, método de búsqueda binaria o método de dicotomía.
-              Consideremos una función continua "f" que está definida en el intervalo cerrado [a, b],
-              está dada con f(a) y f(b) de distinto signo. Entonces, por el teorema intermedio, existe un punto x que pertenece a (a, b) para el que f(x) =0.
+                El método Newton-Raphson, o método Newton, es una potente técnica
+                para resolver ecuaciones numéricamente. Como gran parte del cálculo diferencial,
+                se basa en la simple idea de la aproximación lineal. <br> El método Newton,
+                utilizado correctamente, suele llegar a una raíz con una eficacia devastadora. <br>
+ <br>           La eficiencia de este metodo es entender el algoritmo, conocer como actua en la 
+                seccion de ejemplos, visualizar el código, y la parte interesante donde vemos el 
+                nacimiento del método Newton.
             </p>          
             </div>
           </div>
@@ -124,9 +118,12 @@
               Mi experiencia con el metodo
             </p>       
             <p class="mt-3">
-              Este método lo considero uno de los más precisos y a la hora de su aplicación considero que es muy fácil de hacerlo. 
-              En cualquier software en donde queramos aplicarlo se hace muy sencillo el codificarlo, ya sea por medio de fórmulas en Excel o usando lenguajes de programación como los con c++ o Matlab.
-              La codificación del algoritmo es muy entendible, y resulta simple de comprender como funciona.              
+              Como se podrá apreciar más adelante el algoritmo apra este metodos es 
+              muy sencillo, tan sencillo como unos cuantos pasoso para realizar.
+              <br>
+              Y lo consider tan interante porque con una manera tan sencilla de codificarlo
+              como se describe, es muy "robusto", y podremos llegar a una aproximación muy certera
+              sin ocupar algoritmos muy complejos.
             </p>
             </div>
       </div>
@@ -138,9 +135,15 @@
               ¿Por qué conocer este metodo?
             </p>
             <p class="mt-3">
-              Debido a que es uno de los iniciales métodos el cual pude entender, y con este método empecé a comprender el uso de los métodos numéricos y sus diferentes formas de aplicación. 
-              <br>  Para su entendimiento únicamente es necesario conocer los conceptos básicos de una función y como es su forma dentro de un plano, de esta manera entender que solo se pueden usar funciones continuas.
-              Tal y como lo defino en la sección de “Mi experiencia con el método”, se me hace simple de entender, y pienso que para el lector será de gran utilidad el utilizar este método como una base en el entendimiento de los métodos numéricos y su aplicación en la codificación del mismo.
+              Para el conocedor le parecera intersante lo pequeño ques es algoritmos comparación a otros
+              metodos complejos y eficaces.
+              <br>
+              Y el lector necesita conocer metodos pequeños, que puedan darle el suficiente conocimiento para 
+                comprender metodos, pero no es necesario un algoritmo tan completo para explicar.
+                Ademas que como se considera para estos pequeños algoritmos, no es necesario utilizar grandes
+                cantidades de codigo para su aplicación, y tambien esto no aburriria al lector.
+                <br>
+                Conocimientos previos, unicamente pudiera ocupar comprender la forma de derivacion.
             </p>
             </div>  
         </div>
@@ -153,8 +156,24 @@
 <section id="origen">
   <div class="container" style="text-align: justify;">
     <p class="h1" style="text-align: left;">Origen</p>
-    <p class="h4"> Aunque hay pocos conocimientos concretos sobre el desarrollo del método de bisección, podemos deducir que se desarrolló poco después de que Bernard Bolzano demostrara por primera vez el Teorema del Valor Intermedio en 1817 (Edwards 1979). Parece que se utilizó como prueba de un teorema intermedio a la prueba general que Bolzano estaba desarrollando para el Teorema del Valor Intermedio.</p>
-    <p class="h5"> -Edwards, C. H. (1979). Bolzano, Cauchy, and Continuity. The Historical Development of the Calculus (pp. 308, 309). New York, NY: Springer New York</p>
+    <p class="h5"> 
+        El trabajo de Newton fue realizado en 1669 pero publicado mucho
+        más tarde. Los métodos numéricos relacionados con el método Newton fueron utilizados por 
+        alKashı, Viete, Briggs y Oughtred, todos ellos muchos años antes que Newton.
+        Raphson, unos 20 años después de Newton, se acercó a la ecuación 1, pero sólo
+        para polinomios P(y) de grado 3, 4, 5, ... , 10. <br>
+         Dada una estimación g para a 
+        Raphson calcula una estimación "mejorada" g+x. Establece P(g+x) = 0,
+        expande, descarta términos en xk con k ≥ 2, y resuelve para x. Para polinomios,
+        el procedimiento de Raphson es equivalente a la aproximación lineal.
+        <br>
+        Raphson, al igual que Newton, parece no ser consciente de la conexión entre su
+        método y la derivada. La conexión se hizo unos 50 años más tarde
+        (Simpson, Euler), y el método de Newton finalmente fue más allá de las ecuaciones polinómicas.
+        <br> La conocida interpretación geométrica del método Newton puede
+        haber sido utilizada por primera vez por Mourraille (1768). El análisis de la convergencia del
+        el método de Newton tuvo que esperar hasta Fourier y Cauchy en la década de 1820.
+    </p>    
   </div>
 </section>
 <br>
@@ -169,25 +188,21 @@
             <h1> ALGORITMO </h1>           
             <p class="mt-3">
               <b>ENTRADA:<br></b>
-              Intervalo [a, b]; Tolerancia TOL;<br>
+              Intervalo p0;  <br>
+              Tolerancia TOL;<br>
               Cantidad máxima de iteraciones IT;<br>
+
               HACER i = 1 // i es la variable que controla la cantidad de iteraciones<br>
-              FA = f(a)<br>
-              MIENTRAS i ≤ IT REPETIR<br>
-              HACER p = (a+b)/2 // (calculando pi)
-              <br>HACER FP = f(p)
-              <br>SI FP == 0 o |(b-a)/2| < TOL ENTONCES
-              <br>&nbsp      <b>SALIDA (p) // procedimiento finalizado satisfactoriamente </b>
-              <br>&nbsp      PARAR 
-              <br>HACER i=i + 1 // control de cantidad de iteraciones 
-              <br>SI FA * FP> 0 ENTONCES       
-               <br>&nbsp HACER a = p // calcular ai, bi
-              <br>&nbsp  HACER FA = FP
-              <br> SI NO
-              <br>&nbsp  HACER b = p
-              <br>&nbsp  FIN MIENTRAS
-              <br> <b> SALIDA (“El método fracasó después de “ + IT + “ iteraciones”)</b>
-               <br> PARAR
+              MIENTRAS i <= IT HACER LOS PASOS 1 AL 5             
+               <br> PASO 1: HACER p = p0 – (f(p0) / f’(p0)) 
+               <br> PASO 2: SI |(p – p0)/p| < TOL ENTONCES
+               <br>&nbsp     <b>PASO 3: SALIDA(p)</b>
+               <br>&nbsp     PARAR
+               <br>PASO 4: HACER i = i + 1
+               <br>PASO 5: HACER p0 = p
+               <br>&nbsp   FIN MIENTRAS
+               <br>&nbsp   <b>SALIDA (“El método fracasó o procedimiento terminado sin éxito”)</b>
+              <br>PARAR
             </p>
           </div>
         </div>
@@ -205,7 +220,7 @@
                 TOL;  10^-04 <br>
                 Cantidad máxima de iteraciones IT: 100<br>  
                 <a href="codigo/biseccion/res1.JPG" target="_blank">
-                  <img title="Ejemplo#1" src="img/Bisection/res1.JPG" alt="" style="width: 100%;">
+                  <img title="Ejemplo#1" src="codigo/biseccion/res1.JPG" alt="" style="width: 100%;">
                   </a> 
                  <br>
                  <b>SALIDA:<br></b>
@@ -240,7 +255,7 @@
                   TOL;  10^-04 <br>
                   Cantidad máxima de iteraciones IT: 100<br>  
                   <a href="codigo/biseccion/res2.JPG" target="_blank">
-                    <img title="Ejemplo#1" src="img/Bisection/res2.JPG" alt="" style="width: 100%;">
+                    <img title="Ejemplo#1" src="codigo/biseccion/res2.JPG" alt="" style="width: 100%;">
                     </a> 
                    <br>
                    <b>SALIDA:<br></b>
@@ -265,7 +280,7 @@
                   TOL;  10^-04 <br>
                   Cantidad máxima de iteraciones IT: 100<br>  
                   <a href="codigo/biseccion/res3.JPG" target="_blank">
-                    <img title="Ejemplo#1" src="img/Bisection/res3.JPG" alt="" style="width: 100%;">
+                    <img title="Ejemplo#1" src="codigo/biseccion/res1.JPG" alt="" style="width: 100%;">
                     </a> 
                    <br>
                    <b>SALIDA:<br></b>
@@ -292,13 +307,12 @@
            <div class="header-content-right">
              <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
                <div class="card-body" style="text-align: justify;">
-                 <h1> Codigo en c++ </h1>          
+                 <h1> Descargar codigo en c++ </h1>          
                <p class="mt-3">
                El código en c++ para la utilización del metodo lo puede descargar en esta seccion.
                <i>Este codigo está optimizado para utilizarlo en el software de Visual Basic</i>              
                </p> 
-               <a href="codigo/biseccion/Biseccion1.cpp" download="biseccionC++.cpp" 
-               class="btn btn-outline-success mt-2 header-btn">Descargar codigo</a>         
+               <a href="codigo/biseccion/Biseccion1.cpp" download="biseccionC++.cpp" class="btn btn-outline-success mt-2 header-btn">Descargar codigo</a>         
                </div>
              </div>
            </div>
@@ -307,7 +321,7 @@
           <div class="header-content-right">
             <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
               <div class="card-body" style="text-align: justify;">
-                <h1> Codigo en Matlab</h1>             
+                <h1> Descargar codigo en Matlab</h1>             
               <p class="mt-3">
               El código en Matlab para la utilización del metodo lo puede descargar en esta seccion.
               <i>Este codigo está optimizado para utilizarlo en el software de Matlab</i>              
@@ -336,12 +350,10 @@
             
           <h5> Ventajas: </h5>
             <p class="mt-3">
-            * Siempre es convergente<br>
-            * El aumento del número de iteraciones siempre produce una raíz más precisa, es decir el error se puede controlar.     <br>
-            * No requiere cálculos complejos. Para realizar el método de bisección, todo lo que necesitamos es calcular el promedio de dos números.<br>
-            * Existe un límite de error garantizado, que disminuye con cada iteración sucesiva. El límite de error disminuye en ½ con cada iteración.     <br>
-            * Es simple y fácil de programar en computadora. <br>
-            * Es rápido en caso de multiplices raices.     <br>
+            * Uno de los metodos que converge más rápido.<br>
+            * Converge en la raiz cuadraticamente, es decir, la tasa de convergencia es 2.   <br>
+            * A medida que nos acercamos a la raiz, el número de digitos significativos se duplica aproximadamente en cada paso.<br>
+            * Hace que podamos obtener resultados más precisos para una raíz que se obtuvo previamente en algún otro método de convergencia.  <br>                        
             </p>
         </div>
       </div>
@@ -359,9 +371,9 @@
             <div class="card-body" style="text-align: justify;">
               <h5> Desventajas :</h5>
               <p class="mt-3">
-                * No se puede encontrar la raíz de algunas ecuaciones. Por ejemplo: f (x) = x^2 ya que no hay valores entre corchetes.<br>
-                * No se puede aplicar en un intervalo donde la función toma valores del mismo signo. <br>
-                * No determina raices complejas.<br>
+                * Necesita una funcion derivada dentro del algoritmo. <br>
+                * Si la tangente es paralela o casi paralela al eje x, el método no converge. <br>
+                * Normalmente se espera que el método de Newton converja sólo cerca de la solución.<br>
                 * Si bien la convergenia está asegurada, está puede llevar mucho más tiempo que otros metodos.<br>                
                 * No se puede aplicar si hay discontinuidades en el intervalo, debe ser función lineal.     <br>
                 </p>   
@@ -382,11 +394,10 @@
             
           <h5> Acá podrá amplicar la información y encontrara las referencias de diferentes conceptos que se utilizaron en esta presentación: </h5>
             <p class="mt-3">
-            *<a target="_blank" href="https://en.wikipedia.org/wiki/Bisection_method#:~:text=In%20mathematics%2C%20the%20bisection%20method,two%20values%20with%20opposite%20signs">https://en.wikipedia.org/wiki/Bisection_method#:~:text=In%20mathematics%2C%20the%20bisection%20method,two%20values%20with%20opposite%20signs</a><br>
-            * <a target="_blank" href="https://byjus.com/maths/bisection-method/#:~:text=The%20bisection%20method%20is%20an,found%2C%20which%20is%20extremely%20small.">https://byjus.com/maths/bisection-method/#:~:text=The%20bisection%20method%20is%20an,found%2C%20which%20is%20extremely%20small.</a>     <br>
-            * <a target="_blank" href="https://www.codesansar.com/numerical-methods/bisection-method-disadvantages.htm">https://www.codesansar.com/numerical-methods/bisection-method-disadvantages.htm</a> <br>
-            * <a target="_blank" href="https://www.codesansar.com/numerical-methods/bisection-method-advantages.htm"> https://www.codesansar.com/numerical-methods/bisection-method-advantages.htm</a>     <br>
-            * <a target="_blank" href="https://es.slideshare.net/Osila/ejemplo-del-mtodo-de-biseccin">https://es.slideshare.net/Osila/ejemplo-del-mtodo-de-biseccin</a><br>            
+            *<a target="_blank" href="https://www.math.ubc.ca/~anstee/math104/newtonmethod.pdf">https://www.math.ubc.ca/~anstee/math104/newtonmethod.pdf</a><br>
+            * <a target="_blank" href="https://es.wikipedia.org/wiki/M%C3%A9todo_de_Newton">https://es.wikipedia.org/wiki/M%C3%A9todo_de_Newton</a>     <br>
+            * <a target="_blank" href="https://www.computerscienceai.com/2019/03/newton-raphsons-method.html#adv">https://www.computerscienceai.com/2019/03/newton-raphsons-method.html#adv</a> <br>          
+            * <a target="_blank" href="https://es.slideshare.net/Osila/ejemplo-del-mtodo-de-biseccin"></a><br>            
             </p>
         </div>
       </div>
