@@ -29,7 +29,7 @@
 <br>
   <ul class="nav nav-tabs fixed-top" style="margin-block-start: 6%; background-color: rgb(243, 243, 243);">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Descripcion</a>
+      <a class="nav-link" aria-current="page" href="#">Descripcion</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#experiencia">Experiencia</a>
@@ -57,7 +57,7 @@
 <section id="description">
   <div class="row" style="justify-content: center; text-align: justify;">
     <div class="col-md-8">
-      <div class="card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+      <div class="card border-info  mb-3 shadow p-3 mb-5 bg-light rounded">
         <p class="h3" style="text-align: center;">
           Descripcion:
         </p>
@@ -86,7 +86,7 @@
      </div>
      <div class="col-md-7"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
         <div class="header-content-right">
-          <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+          <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light rounded">
             <div class="card-body" style="text-align: justify;">
               <h1> Metodo de Newton Raphson </h1>
           <h5> Definición :</h5>
@@ -112,7 +112,7 @@
   <div class="container" >
     <div class="row">
       <div class="col-md-6">
-        <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light my-4 rounded" style="margin-left: 45px; margin-right: 45px;">
+        <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light my-4 rounded" style="margin-left: 45px; margin-right: 45px;">
           <div class="card-body" style="text-align: justify;">
             <p class="h5" style="text-align: center;">
               Mi experiencia con el metodo
@@ -129,7 +129,7 @@
       </div>
       </div>
       <div class="col-md-6">
-        <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light my-4 rounded" style="margin-left: 20px; margin-right: 20px;">
+        <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light my-4 rounded" style="margin-left: 20px; margin-right: 20px;">
           <div class="card-body" style="text-align: justify;">
             <p class="h5" style="text-align: center;">
               ¿Por qué conocer este metodo?
@@ -183,12 +183,12 @@
     <div class="row"> <!-- HACE UNA FILA DE 12 COLUMNAS-->
       <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
          <div class="content-header-left">
-          <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+          <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light rounded">
           <div class="card-body" style="text-align: justify;">
             <h1> ALGORITMO </h1>           
             <p class="mt-3">
               <b>ENTRADA:<br></b>
-              Intervalo p0;  <br>
+              Punto p0;  <br>
               Tolerancia TOL;<br>
               Cantidad máxima de iteraciones IT;<br>
 
@@ -215,19 +215,20 @@
               <h5> Ejemplo #1:</h5>
               <p class="mt-3">
                 <b>ENTRADA:<br></b>
-                f(x) = x^5-x+3; <br>
-                Intervalo [a, b]: [-2,-1] ;<br>
-                TOL;  10^-04 <br>
+                f(x) = -x^3-cos(x); <br>
+                f'(x) = -3x^2 + sen(x); <br>
+                p0 = -1 ;<br>
+                TOL;  10^-3 <br>
                 Cantidad máxima de iteraciones IT: 100<br>  
-                <a href="codigo/biseccion/res1.JPG" target="_blank">
-                  <img title="Ejemplo#1" src="codigo/biseccion/res1.JPG" alt="" style="width: 100%;">
+                <a href="img/newton/res1.JPG" target="_blank">
+                  <img title="Ejemplo#1" src="img/newton/res1.JPG" alt="" style="width: 100%;">
                   </a> 
                  <br>
                  <b>SALIDA:<br></b>
-                 Exito en 12 iteraciones <br> 
-                 Intervalo [-1.34130859, -1.34082031]
-                 <br> p=-1.34106445 
-                 <br> f(-1.34106445) = Error: 0.00024414
+                 <b>Exito en 5 iteraciones</b> <br> 
+                 <b>p</b> = -0.824168394075165                        
+                 <br> <b>f(-0.824168394075165)</b> = 0.000085949897766
+                 <br> <b>Error:</b> 0.000267225928837
               </p>
             </div>
           </div>
@@ -250,19 +251,21 @@
                 <h5> Ejemplo #2:</h5>
                 <p class="mt-3">
                   <b>ENTRADA:<br></b>
-                  f(x) = x^2-x-3; <br>
-                  Intervalo [a, b]: [1,2] ;<br>
-                  TOL;  10^-04 <br>
+                  Intervalo: [-1,1] <br>
+                  f(x) = 2^x - 1.3; <br>
+                  f'(x) = 2^x *ln(2); <br>
+                  p0 = -1;<br>
+                  TOL;  10^-10 <br>
                   Cantidad máxima de iteraciones IT: 100<br>  
-                  <a href="codigo/biseccion/res2.JPG" target="_blank">
-                    <img title="Ejemplo#1" src="codigo/biseccion/res2.JPG" alt="" style="width: 100%;">
+                  <a href="img/newton/rest2.JPG" target="_blank">
+                    <img title="Ejemplo#2" src="img/newton/rest2.JPG" alt="" style="width: 100%;">
                     </a> 
                    <br>
                    <b>SALIDA:<br></b>
-                   Exito en 12 iteraciones <br> 
-                   Intervalo [1.99951172, 2.00000000]
-                   <br> p=1.99975586 
-                   <br> f(-1.00073242) = Error: 0.00024414
+                   <b>Exito en 6 iteraciones </b><br> 
+                   <b>p</b> = 0.378511637449265                       
+                   <br> <b>f(0.378511637449265)</b> = 0.000000012791474
+                   <br> <b>Error:</b> 0.0000000000000
                 </p>
               </div>
             </div>
@@ -275,19 +278,21 @@
                 <h5> Ejemplo #3:</h5>
                 <p class="mt-3">
                   <b>ENTRADA:<br></b>
-                  f(x) = e^-x*-x; <br>
-                  Intervalo [a, b]: [-2,-1] ;<br>
-                  TOL;  10^-04 <br>
+                  Intervalo [a, b]: [1,4] ;<br>
+                  f(x) = x^3 -2x^2; <br>
+                  f'(x) = 3x^2 -4x; <br>    
+                  p0 = 1.5; <br>
+                  TOL;  10^-5 <br>
                   Cantidad máxima de iteraciones IT: 100<br>  
-                  <a href="codigo/biseccion/res3.JPG" target="_blank">
-                    <img title="Ejemplo#1" src="codigo/biseccion/res1.JPG" alt="" style="width: 100%;">
+                  <a href="img/newton/rest3.JPG" target="_blank">
+                    <img title="Ejemplo#3" src="img/newton/rest3.JPG" alt="" style="width: 100%;">
                     </a> 
                    <br>
                    <b>SALIDA:<br></b>
-                   Exito en 12 iteraciones <br> 
-                   Intervalo [-1.34130859, -1.34082031]
-                   <br> p=-1.34106445 
-                   <br> f(-1.34106445) = Error: 0.00024414
+                   <b>Exito en 9 iteraciones </b><br> 
+                   <b>p</b> = 2.690647602081299 
+                   <br> <b>f(2.690647602081299)</b> = 0.0.000000953674316
+                   <br> <b>Error:</b> 0.0000000000000
                 </p>
               </div>
             </div>
@@ -305,28 +310,28 @@
         
         <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
            <div class="header-content-right">
-             <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+             <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light rounded">
                <div class="card-body" style="text-align: justify;">
                  <h1> Descargar codigo en c++ </h1>          
                <p class="mt-3">
                El código en c++ para la utilización del metodo lo puede descargar en esta seccion.
                <i>Este codigo está optimizado para utilizarlo en el software de Visual Basic</i>              
                </p> 
-               <a href="codigo/biseccion/Biseccion1.cpp" download="biseccionC++.cpp" class="btn btn-outline-success mt-2 header-btn">Descargar codigo</a>         
+               <a href="codigo/newton/MetodoNewton-Raphson.cpp" download="NewtonRaphsonC++.cpp" class="btn btn-outline-info mt-2 header-btn">Descargar codigo</a>         
                </div>
              </div>
            </div>
         </div>
         <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
           <div class="header-content-right">
-            <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+            <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light rounded">
               <div class="card-body" style="text-align: justify;">
                 <h1> Descargar codigo en Matlab</h1>             
               <p class="mt-3">
               El código en Matlab para la utilización del metodo lo puede descargar en esta seccion.
               <i>Este codigo está optimizado para utilizarlo en el software de Matlab</i>              
               </p>          
-              <a href="codigo/biseccion/BiseccionEjemplo.m" download="biseccionMatlab.m" class="btn btn-outline-success mt-2 header-btn">Descargar codigo</a>
+              <a href="codigo/newton/NewtonRaphson.m" download="biseccionMatlab.m" class="btn btn-outline-info mt-2 header-btn">Descargar codigo</a>
               </div>
             </div>
           </div>
@@ -345,7 +350,7 @@
   <div class="container" >
     <div class="row">
       <div class="col-md-12">
-        <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
+        <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
           <div class="card-body" style="text-align: justify;">
             
           <h5> Ventajas: </h5>
@@ -367,7 +372,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-          <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light  rounded">
+          <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light  rounded">
             <div class="card-body" style="text-align: justify;">
               <h5> Desventajas :</h5>
               <p class="mt-3">
@@ -376,7 +381,7 @@
                 * Normalmente se espera que el método de Newton converja sólo cerca de la solución.<br>
                 * Si bien la convergenia está asegurada, está puede llevar mucho más tiempo que otros metodos.<br>                
                 * No se puede aplicar si hay discontinuidades en el intervalo, debe ser función lineal.     <br>
-                </p>   
+              </p>   
           </div>
         </div>
       </div>
@@ -389,15 +394,14 @@
   <div class="container" >
     <div class="row">
       <div class="col-md-12">
-        <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
+        <div class="card card border-info  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
           <div class="card-body" style="text-align: justify;">
             
           <h5> Acá podrá amplicar la información y encontrara las referencias de diferentes conceptos que se utilizaron en esta presentación: </h5>
             <p class="mt-3">
             *<a target="_blank" href="https://www.math.ubc.ca/~anstee/math104/newtonmethod.pdf">https://www.math.ubc.ca/~anstee/math104/newtonmethod.pdf</a><br>
             * <a target="_blank" href="https://es.wikipedia.org/wiki/M%C3%A9todo_de_Newton">https://es.wikipedia.org/wiki/M%C3%A9todo_de_Newton</a>     <br>
-            * <a target="_blank" href="https://www.computerscienceai.com/2019/03/newton-raphsons-method.html#adv">https://www.computerscienceai.com/2019/03/newton-raphsons-method.html#adv</a> <br>          
-            * <a target="_blank" href="https://es.slideshare.net/Osila/ejemplo-del-mtodo-de-biseccin"></a><br>            
+            * <a target="_blank" href="https://www.computerscienceai.com/2019/03/newton-raphsons-method.html#adv">https://www.computerscienceai.com/2019/03/newton-raphsons-method.html#adv</a> <br>                      
             </p>
         </div>
       </div>

@@ -29,7 +29,7 @@
 <br>
   <ul class="nav nav-tabs fixed-top" style="margin-block-start: 6%; background-color: rgb(243, 243, 243);">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Descripcion</a>
+      <a class="nav-link" aria-current="page" href="#">Descripcion</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#experiencia">Experiencia</a>
@@ -50,19 +50,23 @@
       <a class="nav-link" href="#referencias">Referencias</a>
     </li>
   </ul>
-
 <br><br>
-
 
 <section id="description">
   <div class="row" style="justify-content: center; text-align: justify;">
     <div class="col-md-8">
-      <div class="card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+      <div class="card border-danger  mb-3 shadow p-3 mb-5 bg-light rounded">
         <p class="h3" style="text-align: center;">
           Descripcion:
         </p>
         <p class="h5">
-          ---. 
+            Método para encontrar una solución para f(x) = 0 dadas las aproximaciones iniciales p0
+            y p1. <br>
+            El principal inconveniente del método de <b>Newton-Raphson</b> estriba en que requiere conocer
+            el valor de la primera derivada de la función en el punto. Sin embargo, la forma funcional de
+            f(x) dificulta en ocasiones el cálculo de la derivada. En estos casos es más útil emplear el
+            método de La Secante. Este método se basa en el de Newton-Raphson, pero evita calcular
+            la derivada de f(x).
         </p>
       </div>
     </div>
@@ -76,22 +80,32 @@
      <div class="col-md-5"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
         <div class="content-header-left">
           <a>
-          <img title="Funcion del metodo graficamente"  class="shadow mb-5 bg-body" src="img/Bisection/250px-Bisection_method.svg.png" alt="" style="width: 75%;">
+          <img title="Funcion del metodo graficamente"  class="shadow mb-5 bg-body" src="img/Secante/800px-Secant_method.svg.png" alt="" style="width: 90%;">
           </a>          
           </div>
      </div>
      <div class="col-md-7"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
         <div class="header-content-right">
-          <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+          <div class="card card border-danger  mb-3 shadow p-3 mb-5 bg-light rounded">
             <div class="card-body" style="text-align: justify;">
               <h1> Metodo de La secante </h1>
           <h5> Definición :</h5>
             <p class="mt-3">
-            El método de bisección se utiliza para encontrar las raíces de una 
-            ervalos positivo y negativo. Es un método 
-             sencillo y relativamente lento.
-             <br> El método de bisección también se conoce
-              como métod
+              El método de la secante es un método de búsqueda de raíces. 
+              A diferencia del método de Newton, el método secante utiliza rectas secantes 
+              en lugar de rectas tangentes para encontrar raíces específicas. Se hace una
+               aproximación inicial de dos puntos x0 y x1 en una función f(x), y luego se
+                encuentra una recta secante usando esos dos puntos. El punto x2 es donde la
+                 recta secante cruza el eje x. Entonces se encuentra otra recta secante desde
+                  el punto x1 hasta el punto f(x2). Después de múltiples iteraciones, las líneas 
+                  secantes comenzarán a converger en la raíz deseada.  
+              
+             <br> Es un algoritmo de búsqueda de raíces que realiza estimaciones
+              puntuales sucesivas del valor de una raíz de una función continua. 
+              En general, no se garantiza que el método de la secante converja hacia
+               una raíz, pero en algunas condiciones lo hace. Una ligera variante de
+                este método, denominada método de la falsa posición, funciona de forma 
+                muy similar al método de la bisección.
             </p>          
             </div>
           </div>
@@ -99,36 +113,66 @@
      </div>
    </div>
  </div>
-
 </header>
+
+
+<section id="description">
+  <div class="row" style="justify-content: center; text-align: justify;">
+    <div class="col-md-8">
+      <div class="card border-danger  mb-3 shadow p-3 mb-5 bg-light rounded">
+        <p class="h3" style="text-align: center;">
+          Complemento:
+        </p>
+        <p class="h5">
+          En análisis numérico, el método de la secante 
+          es un algoritmo de búsqueda de raíces que utiliza 
+          una sucesión de raíces de rectas secantes para aproximar 
+          mejor una raíz de una función f(x). El método de la secante
+           puede considerarse una aproximación por diferencia finita del
+            método de Newton. Sin embargo, el método de la secante es 
+            anterior al método de Newton en más de 3000 años.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="" id="experiencia" style="background: rgb(236, 245, 247);">
   <div class="container" >
     <div class="row">
       <div class="col-md-6">
-        <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light my-4 rounded" style="margin-left: 45px; margin-right: 45px;">
+        <div class="card card border-danger  mb-3 shadow p-3 mb-5 bg-light my-4 rounded" style="margin-left: 45px; margin-right: 45px;">
           <div class="card-body" style="text-align: justify;">
             <p class="h5" style="text-align: center;">
               Mi experiencia con el metodo
             </p>       
             <p class="mt-3">
-              Este método lo considero uno de los más precisos y a la hora de su aplicación considero que es muy fácil de hacerlo. 
-              En cualquier software en donde queramos aplicarlo se hace muy sencillo el codificarlo, ya sea por medio de fórmulas en Excel o usando lenguajes de programación como los con c++ o Matlab.
-              La codificación del algoritmo es muy entendible, y resulta simple de comprender como funciona.              
+              Me resulto interesante, el que en la practica conviene mucho el estudiar
+              este metodo del lado de un graficador de funciones.
+              <br>
+              Muy intersante ya que se podía comprobar si existia dentro de todo un plano
+              lo que podemos definir en raices con este metodo.
             </p>
             </div>
       </div>
       </div>
       <div class="col-md-6">
-        <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light my-4 rounded" style="margin-left: 20px; margin-right: 20px;">
+        <div class="card card border-danger  mb-3 shadow p-3 mb-5 bg-light my-4 rounded" style="margin-left: 20px; margin-right: 20px;">
           <div class="card-body" style="text-align: justify;">
             <p class="h5" style="text-align: center;">
               ¿Por qué conocer este metodo?
             </p>
             <p class="mt-3">
-              Debido a que es uno de los iniciales métodos el cual pude entender, y con este método empecé a comprender el uso de los métodos numéricos y sus diferentes formas de aplicación. 
-              <br>  Para su entendimiento únicamente es necesario conocer los conceptos básicos de una función y como es su forma dentro de un plano, de esta manera entender que solo se pueden usar funciones continuas.
-              Tal y como lo defino en la sección de “Mi experiencia con el método”, se me hace simple de entender, y pienso que para el lector será de gran utilidad el utilizar este método como una base en el entendimiento de los métodos numéricos y su aplicación en la codificación del mismo.
+              Los dos primeros algoritmos que vimos, pueden concebirse como algoritmos faciles, y muy simples.
+              <br> 
+              Ahora es momento para que el lector pueda descubrir nuevos metodos, alguno mas complejos
+              , uno que le resulte un poco intersante para entender, y de esta manera adquirir el conocimiento
+              que ya se tendría que tener.
+              <br>
+              Esperemos al lector le parece intersante como se puede hacer una mezcla de diferentes conceptos 
+              como lo son, tangente, secante, funciones, derivada, lo menciono por el metodo anteior,
+              y porque este le sigue, así que, espero sea de total agrado la eleccion.              
             </p>
             </div>  
         </div>
@@ -138,11 +182,22 @@
   </div>
 </section>
 <br>
+
+
 <section id="origen">
   <div class="container" style="text-align: justify;">
     <p class="h1" style="text-align: left;">Origen</p>
-    <p class="h4"> Aunque hay pocos conocimientos concretos sobre el desarrollo del método de bisección, podemos deducir que se desarrolló poco después de que Bernard Bolzano demostrara por primera vez el Teorema del Valor Intermedio en 1817 (Edwards 1979). Parece que se utilizó como prueba de un teorema intermedio a la prueba general que Bolzano estaba desarrollando para el Teorema del Valor Intermedio.</p>
-    <p class="h5"> -Edwards, C. H. (1979). Bolzano, Cauchy, and Continuity. The Historical Development of the Calculus (pp. 308, 309). New York, NY: Springer New York</p>
+     El método de la secante fue creado más de 3000 años antes del
+       método de Newton. Un caso especial de este método se denominó por primera vez
+        regla de la doble falsa posición en tablillas de arcilla babilónicas del siglo
+         XVIII a.C. Ahora se considera una versión primitiva porque es esencialmente el
+         método de la secante aplicado a una ecuación lineal. <br> Como el álgebra no se
+          había desarrollado en esa época, los babilonios describían sus problemas de 
+          forma escrita en lugar de hacerlo de forma simbólica. <br> Este método se
+           desarrolló a raíz de los problemas comunes que encontraban, como la venta
+            y distribución de propiedades, la herencia, o con el fin de controlar las
+             porciones y la predicción de la producción. <br> En 1545 la regla de la doble 
+             falsa posición fue utilizada por primera vez como procedimiento iterativo por Cardano en su Artis Magnae (Papakonstantinou 2009). Así, tenemos el método de la secante para una ecuación no lineal.
   </div>
 </section>
 <br>
@@ -152,30 +207,33 @@
     <div class="row"> <!-- HACE UNA FILA DE 12 COLUMNAS-->
       <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
          <div class="content-header-left">
-          <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+          <div class="card card border-danger  mb-3 shadow p-3 mb-5 bg-light rounded">
           <div class="card-body" style="text-align: justify;">
             <h1> ALGORITMO </h1>           
             <p class="mt-3">
               <b>ENTRADA:<br></b>
-              Intervalo [a, b]; Tolerancia TOL;<br>
-              Cantidad máxima de iteraciones IT;<br>
-              HACER i = 1 // i es la variable que controla la cantidad de iteraciones<br>
-              FA = f(a)<br>
-              MIENTRAS i ≤ IT REPETIR<br>
-              HACER p = (a+b)/2 // (calculando pi)
-              <br>HACER FP = f(p)
-              <br>SI FP == 0 o |(b-a)/2| < TOL ENTONCES
-              <br>&nbsp      <b>SALIDA (p) // procedimiento finalizado satisfactoriamente </b>
-              <br>&nbsp      PARAR 
-              <br>HACER i=i + 1 // control de cantidad de iteraciones 
-              <br>SI FA * FP> 0 ENTONCES       
-               <br>&nbsp HACER a = p // calcular ai, bi
-              <br>&nbsp  HACER FA = FP
-              <br> SI NO
-              <br>&nbsp  HACER b = p
-              <br>&nbsp  FIN MIENTRAS
-              <br> <b> SALIDA (“El método fracasó después de “ + IT + “ iteraciones”)</b>
-               <br> PARAR
+              Punto p0;  <br>
+              Punto p1;  <br>
+              Tolerancia TOL;<br>
+              Cantidad máxima de iteraciones IT;<br>              
+              <b>SALIDA:</b> Solución aproximada p o mensaje de fracaso
+              <br> HACER i = 2
+              <br> q0 = f(p0) <br>
+              q1 = f(p1) <br>
+              MIENTRAS i <= IT REPETIR <br>
+              HACER p = p1 – q1(p1 – p0) / (q1 – q0) <br>
+              SI |(p – p1)/p| < TOL ENTONCES <br>
+              &nbsp SALIDA(p) <br>
+              &nbsp PARAR <br>
+              FIN SI … ENTONCES <br>
+              &nbsp HACER i = i + 1 <br>
+              &nbsp HACER p0 = p1 <br>
+              &nbsp HACER q0 = q1 <br>
+              &nbsp HACER p1 = p <br>
+              &nbsp HACER q1 = f(p) <br>
+              FIN MIENTRAS <br>
+              SALIDA (“El método falló después de IT iteraciones”) <br>
+              PARAR <br>              
             </p>
           </div>
         </div>
@@ -188,19 +246,19 @@
               <h5> Ejemplo #1:</h5>
               <p class="mt-3">
                 <b>ENTRADA:<br></b>
-                f(x) = x^5-x+3; <br>
-                Intervalo [a, b]: [-2,-1] ;<br>
-                TOL;  10^-04 <br>
+                f(x) = x -0.8 -0.2 *sen(x); <br>
+                Intervalo [a, b]: [0,pi/2] ;<br>
+                TOL;  10^-5 <br>
                 Cantidad máxima de iteraciones IT: 100<br>  
-                <a href="codigo/biseccion/res1.JPG" target="_blank">
-                  <img title="Ejemplo#1" src="codigo/biseccion/res1.JPG" alt="" style="width: 100%;">
+                <a href="img/secante/res1.JPG" target="_blank">
+                  <img title="Ejemplo#1" src="img/secante/res1.JPG" alt="" style="width: 100%;">
                   </a> 
                  <br>
                  <b>SALIDA:<br></b>
-                 Exito en 12 iteraciones <br> 
-                 Intervalo [-1.34130859, -1.34082031]
-                 <br> p=-1.34106445 
-                 <br> f(-1.34106445) = Error: 0.00024414
+                 Exito en 8 iteraciones <br>                  
+                 <br> <b>p=0.9643333887695223</b>
+                 <br> <b>f(0.9643333887695223)</b>
+                 <br> <b>Error: 0.0000000000</b>
               </p>
             </div>
           </div>
@@ -223,44 +281,43 @@
                 <h5> Ejemplo #2:</h5>
                 <p class="mt-3">
                   <b>ENTRADA:<br></b>
-                  f(x) = x^2-x-3; <br>
-                  Intervalo [a, b]: [1,2] ;<br>
-                  TOL;  10^-04 <br>
+                  f(x) =arctan(x) -2x+1; <br>
+                  Intervalo [a, b]: [0,1] ;<br>
+                  TOL;  10^-10 <br>
                   Cantidad máxima de iteraciones IT: 100<br>  
-                  <a href="codigo/biseccion/res2.JPG" target="_blank">
-                    <img title="Ejemplo#1" src="codigo/biseccion/res2.JPG" alt="" style="width: 100%;">
+                  <a href="img/secante/res2.JPG" target="_blank">
+                    <img title="Ejemplo#1" src="img/secante/res2.JPG" alt="" style="width: 100%;">
                     </a> 
                    <br>
                    <b>SALIDA:<br></b>
-                   Exito en 12 iteraciones <br> 
-                   Intervalo [1.99951172, 2.00000000]
-                   <br> p=1.99975586 
-                   <br> f(-1.00073242) = Error: 0.00024414
-                </p>
+                   Exito en 8 iteraciones <br>                  
+                   <br> <b>p=0.853169120853407</b>
+                   <br> <b>f(0.853169120853407)</b>
+                   <br> <b>Error: 0.000983206171171</b>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
           <div class="header-content-right">
-            <div class="card card border-warning  mb-3 shadow p-3 mb-5 bg-light rounded">
+            <div class="card card border-warning    mb-3 shadow p-3 mb-5 bg-light rounded">
               <div class="card-body" style="text-align: justify;">            
                 <h5> Ejemplo #3:</h5>
                 <p class="mt-3">
                   <b>ENTRADA:<br></b>
-                  f(x) = e^-x*-x; <br>
-                  Intervalo [a, b]: [-2,-1] ;<br>
-                  TOL;  10^-04 <br>
+                  f(x) = x^3 + x + 16 <br>
+                  Intervalo [a, b]: [-3,-2] ;<br>
+                  TOL;  10^-7 <br>
                   Cantidad máxima de iteraciones IT: 100<br>  
-                  <a href="codigo/biseccion/res3.JPG" target="_blank">
-                    <img title="Ejemplo#1" src="codigo/biseccion/res1.JPG" alt="" style="width: 100%;">
+                  <a href="img/secante/res3.JPG" target="_blank">
+                    <img title="Ejemplo#1" src="img/secante/res3.JPG" alt="" style="width: 100%;">
                     </a> 
                    <br>
                    <b>SALIDA:<br></b>
-                   Exito en 12 iteraciones <br> 
-                   Intervalo [-1.34130859, -1.34082031]
-                   <br> p=-1.34106445 
-                   <br> f(-1.34106445) = Error: 0.00024414
+                   Exito en 8 iteraciones <br>                  
+                   <br> <b>p=-2.387686553392323</b>
+                   <br> <b>f(-2.387686553392323)</b>
+                   <br> <b>Error: 0.000000000290521</b>
                 </p>
               </div>
             </div>
@@ -278,28 +335,28 @@
         
         <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
            <div class="header-content-right">
-             <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+             <div class="card card border-danger  mb-3 shadow p-3 mb-5 bg-light rounded">
                <div class="card-body" style="text-align: justify;">
                  <h1> Codigo en c++ </h1>          
                <p class="mt-3">
                El código en c++ para la utilización del metodo lo puede descargar en esta seccion.
                <i>Este codigo está optimizado para utilizarlo en el software de Visual Basic</i>              
                </p> 
-               <a href="codigo/biseccion/Biseccion1.cpp" download="biseccionC++.cpp" class="btn btn-outline-success mt-2 header-btn">Descargar codigo</a>         
+               <a href="codigo/secante/laSecante.cpp" download="secanteC++.cpp" class="btn btn-outline-danger mt-2 header-btn">Descargar codigo</a>         
                </div>
              </div>
            </div>
         </div>
         <div class="col-md-6"> <!-- ACA SE USAN 6 DE LAS COLUMNAS-->
           <div class="header-content-right">
-            <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light rounded">
+            <div class="card card border-danger  mb-3 shadow p-3 mb-5 bg-light rounded">
               <div class="card-body" style="text-align: justify;">
                 <h1> Codigo en Matlab</h1>             
               <p class="mt-3">
               El código en Matlab para la utilización del metodo lo puede descargar en esta seccion.
               <i>Este codigo está optimizado para utilizarlo en el software de Matlab</i>              
               </p>          
-              <a href="codigo/biseccion/BiseccionEjemplo.m" download="biseccionMatlab.m" class="btn btn-outline-success mt-2 header-btn">Descargar codigo</a>
+              <a href="codigo/secante/laSecante.m" download="secanteMatlab.m" class="btn btn-outline-danger mt-2 header-btn">Descargar codigo</a>
               </div>
             </div>
           </div>
@@ -309,26 +366,21 @@
 </section>
 
 
-
-
-
-
-
 <section class="" id="adven" style="background: rgb(236, 245, 247);">
   <div class="container" >
     <div class="row">
       <div class="col-md-12">
-        <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
-          <div class="card-body" style="text-align: justify;">
-            
+        <div class="card card border-danger  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
+        <div class="card-body" style="text-align: justify;">            
           <h5> Ventajas: </h5>
             <p class="mt-3">
-            * Siempre es convergente<br>
-            * El aumento del número de iteraciones siempre produce una raíz más precisa, es decir el error se puede controlar.     <br>
-            * No requiere cálculos complejos. Para realizar el método de bisección, todo lo que necesitamos es calcular el promedio de dos números.<br>
-            * Existe un límite de error garantizado, que disminuye con cada iteración sucesiva. El límite de error disminuye en ½ con cada iteración.     <br>
-            * Es simple y fácil de programar en computadora. <br>
-            * Es rápido en caso de multiplices raices.     <br>
+            * Converge a una velocidad superior a la lineal, por lo que es más rápidamente convergente que el método de bisección.<br>
+            * No requiere el uso de la derivada de la
+            función, algo que no está disponible en un número
+            aplicaciones.<br>
+            * Sólo requiere una evaluación de la función por iteración,
+            en comparación con el método de Newton que requiere
+            dos.<br>           
             </p>
         </div>
       </div>
@@ -342,16 +394,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-          <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light  rounded">
+          <div class="card card border-danger  mb-3 shadow p-3 mb-5 bg-light  rounded">
             <div class="card-body" style="text-align: justify;">
               <h5> Desventajas :</h5>
               <p class="mt-3">
-                * No se puede encontrar la raíz de algunas ecuaciones. Por ejemplo: f (x) = x^2 ya que no hay valores entre corchetes.<br>
-                * No se puede aplicar en un intervalo donde la función toma valores del mismo signo. <br>
-                * No determina raices complejas.<br>
-                * Si bien la convergenia está asegurada, está puede llevar mucho más tiempo que otros metodos.<br>                
-                * No se puede aplicar si hay discontinuidades en el intervalo, debe ser función lineal.     <br>
-                </p>   
+                * Puede no converger.<br>
+                * No hay un límite de error garantizado para los iterados iterados calculados. <br>
+                * Es probable que tenga dificultades si f 0(α) = 0. Esto significa que el eje x es tangente a la gráfica de y = f (x) en x = α.<br>
+                * El método de Newton se generaliza más fácilmente a nuevos métodos para resolver sistemas simultáneos de ecuaciones no lineales. <br> 
+              </p>   
           </div>
         </div>
       </div>
@@ -364,16 +415,15 @@
   <div class="container" >
     <div class="row">
       <div class="col-md-12">
-        <div class="card card border-success  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
+        <div class="card card border-danger  mb-3 shadow p-3 mb-5 bg-light my-4 rounded">
           <div class="card-body" style="text-align: justify;">
             
           <h5> Acá podrá amplicar la información y encontrara las referencias de diferentes conceptos que se utilizaron en esta presentación: </h5>
             <p class="mt-3">
-            *<a target="_blank" href="https://en.wikipedia.org/wiki/Bisection_method#:~:text=In%20mathematics%2C%20the%20bisection%20method,two%20values%20with%20opposite%20signs">https://en.wikipedia.org/wiki/Bisection_method#:~:text=In%20mathematics%2C%20the%20bisection%20method,two%20values%20with%20opposite%20signs</a><br>
-            * <a target="_blank" href="https://byjus.com/maths/bisection-method/#:~:text=The%20bisection%20method%20is%20an,found%2C%20which%20is%20extremely%20small.">https://byjus.com/maths/bisection-method/#:~:text=The%20bisection%20method%20is%20an,found%2C%20which%20is%20extremely%20small.</a>     <br>
-            * <a target="_blank" href="https://www.codesansar.com/numerical-methods/bisection-method-disadvantages.htm">https://www.codesansar.com/numerical-methods/bisection-method-disadvantages.htm</a> <br>
-            * <a target="_blank" href="https://www.codesansar.com/numerical-methods/bisection-method-advantages.htm"> https://www.codesansar.com/numerical-methods/bisection-method-advantages.htm</a>     <br>
-            * <a target="_blank" href="https://es.slideshare.net/Osila/ejemplo-del-mtodo-de-biseccin">https://es.slideshare.net/Osila/ejemplo-del-mtodo-de-biseccin</a><br>            
+            *<a target="_blank" href="https://calculus.subwiki.org/wiki/Secant_method">https://calculus.subwiki.org/wiki/Secant_method</a><br>
+            * <a target="_blank" href="https://en.wikipedia.org/wiki/Secant_method#:~:text=In%20numerical%20analysis%2C%20the%20secant,difference%20approximation%20of%20Newton's%20method.">https://en.wikipedia.org/wiki/Secant_method#:~:text=In%20numerical%20analysis%2C%20the%20secant,difference%20approximation%20of%20Newton's%20method.</a>     <br>
+            * <a target="_blank" href="https://sites.google.com/site/knowyourrootsmaxima/introduction/secantmethod#:~:text=The%20secant%20method%20was%20created,applied%20to%20a%20linear%20equation.">https://sites.google.com/site/knowyourrootsmaxima/introduction/secantmethod#:~:text=The%20secant%20method%20was%20created,applied%20to%20a%20linear%20equation.</a> <br>
+            * <a target="_blank" href="http://studyhelpszone.blogspot.com/2009/07/advantages-and-disadvanteges-of-secant.html"> http://studyhelpszone.blogspot.com/2009/07/advantages-and-disadvanteges-of-secant.html</a>     <br>                    
             </p>
         </div>
       </div>
